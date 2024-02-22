@@ -1,0 +1,4 @@
+SELECT assignments.name as student, avg(duration.*) as average_assignment_duration, avg(assignment_submissions.*) as average_estimated_duration
+
+FROM assignment_submissions ON student_id = student.id
+JOIN aasignments ON 
